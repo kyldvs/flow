@@ -6,6 +6,7 @@
  *)
 
 module Ast = Flow_ast
+module Offset_utils = Offset_utils
 open Token
 open Parser_env
 open Parser_common
