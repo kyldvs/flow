@@ -119,7 +119,7 @@ test: test-js test-ocaml
 ocamlfind-install:
 	cd $(TOP); \
 	$(OCB) $(REL_DIR)/parser_flow.cma $(REL_DIR)/parser_flow.cmxa; \
-	ocamlfind install flow_parser $(REL_DIR)/META \
+	ocamlfind install flow_parser ppx_deriving.std $(REL_DIR)/META \
 		_build/$(REL_DIR)/parser_flow.a \
 		_build/$(REL_DIR)/parser_flow.cma \
 		_build/$(REL_DIR)/parser_flow.cmx \
