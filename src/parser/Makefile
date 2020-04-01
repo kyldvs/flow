@@ -122,6 +122,7 @@ ocamlfind-install:
 	ocamlfind install flow_parser $(REL_DIR)/META \
 		_build/$(REL_DIR)/parser_flow.a \
 		_build/$(REL_DIR)/parser_flow.cma \
+		_build/$(REL_DIR)/parser_flow.cmx \
 		_build/$(REL_DIR)/parser_flow.cmxa \
 		_build/$(REL_DIR)/*.cmi
 
