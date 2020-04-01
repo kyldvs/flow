@@ -51,7 +51,7 @@ clean:
 
 build-parser:
 	cd $(TOP); \
-	$(OCB) -no-links -linkall $(REL_DIR)/parser_flow.cmxa
+	$(OCB) -no-links -lflag -linkall $(REL_DIR)/parser_flow.cmxa
 
 .PHONY: libflowparser.native.o
 libflowparser.native.o:
